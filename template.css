@@ -37,7 +37,7 @@ li a.fixed {
 li a.signature{
    position: absolute;
    bottom: 10px;
-   background-color: #333;
+   background-color: #333 rga(0,0,0,0);
    text-align: center;
    text-transformation: uppercase;
    letter-spacing: 0.6em;
