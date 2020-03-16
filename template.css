@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   width: 50px;
-  background-color: #222;
+  background-color: #b6c6e0;
   position: fixed;
   height: 100%;
   overflow: hidden;
@@ -36,7 +36,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: #333;
+  background-color: #d7e4fa;
 }
 
 .logo{
@@ -45,7 +45,7 @@
   width: 100%;
   overflow: hidden;
   text-align: center;
-  color: white; 
+  color: #77a2e6; 
 }
 
 .jobPerformance{
@@ -62,7 +62,7 @@
   left: 50px;
   height: 250px;
   width: 85%;
-  border: 2px solid red;
+  border: 2px solid #77a2e6;
   padding: 10px;
   border-radius: 75px 20px
 }
