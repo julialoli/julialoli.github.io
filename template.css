@@ -43,9 +43,12 @@
   top: 0px;
   height: 25px;
   width: 100%;
-  overflow: hidden;
   text-align: center;
   color: #77a2e6; 
+  font-family: 'Homemade Apple', cursive;
+  font-size: 50px;
+  position: absolute;
+  opacity: 40%;
 }
 
 .jobPerformance{
@@ -62,9 +65,30 @@
   left: 50px;
   height: 250px;
   width: 85%;
-  border: 2px solid #77a2e6;
   padding: 10px;
-  border-radius: 75px 20px
+  border-radius: 75px 20px;
+  overflow: scroll;
+}
+
+.column1{
+    top: 15%;
+    position: relative;
+    width: 33%;
+    left: 5%;
+    letter-spacing:-1px;
+    font-weight: 100;
+    
+}
+
+.column2{
+    position: absolute;
+    top: 15%;
+    width: 33%;
+    left: 50%;
+}
+
+.column3{
+    
 }
 
 .aboutMe{
