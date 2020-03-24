@@ -39,6 +39,13 @@
   background-color: #d7e4fa;
 }
 
+.cloud{
+    width: 350px;
+    height: 120px; 
+    position: relative;
+	margin: 120px auto 20px;
+}
+
 .logo{
   top: 0px;
   height: 25px;
@@ -68,6 +75,7 @@
   padding: 10px;
   border-radius: 75px 20px;
   overflow: scroll;
+  box-shadow: 1px 2px #77a2e6
 }
 
 .column1{
@@ -85,6 +93,8 @@
     top: 15%;
     width: 33%;
     left: 50%;
+    letter-spacing:-1px;
+    font-weight: 100;
 }
 
 .column3{
@@ -95,8 +105,9 @@
   top: 375px;
   width: 100%;
   height: 300px;
-  overflow: auto;
-
+  overflow: scroll;
+  left: 50%;
+  font-size: 13px;
 }
 
 .contactMe{
@@ -105,4 +116,51 @@
   height: 300px;
   overflow: auto;
 
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  opacity: 90%;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
