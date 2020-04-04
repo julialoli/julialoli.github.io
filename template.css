@@ -69,69 +69,142 @@ body{
     position: absolute;
 }
 
-.website-first{
-    width: 300px;
-    height: 150px;
-    background-image: url("Design1.png");
-    background-size: cover;
+.indeed-logo{
+    width: 15px;
+    height: 15px;
+    background-color: whitesmoke;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.indeed-i{
+    
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container{
+    width: 375px;
+    height: 160px;
     margin-top: 45px;
     margin-left: 25px;
     position: absolute;
-    border: 5px solid darkseagreen;    
+    background: url(Design1.png);
+    background-size: cover;
+    border: 2px solid cadetblue;
 }
 
-.label{
-    opacity: 0%;
-    width: 300px;
-    height: 150px;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: cadetblue;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  #background-color: darkseagreen;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 0px;
     position: absolute;
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    font-size: 25px;
-
 }
 
-.website-first:hover{
-    background-color: darkseagreen;
-    display: block;
-    background-image: none;
-
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-.label:hover{
-    opacity: 100%;
-    display:block;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.show-label{
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    font-size: 25px;
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 
 .website-second{
-    width: 150px;
+    width: 145px;
     height: 160px;
     position: absolute;
-    background-color: crimson;
+    background-image: url(me.jpg);
+    background-size: cover;
+    border: 5px solid crimson;    
     margin-top: 45px;
-    margin-left: 340px;
+    margin-left: 420px;
+}
+
+.second-label{
+    position: absolute;
+    text-align:center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 15px;
+    margin-top: 115px;
+    margin-left: 335px;
+    display: block;
+    transform: rotate(270deg);
+    color: crimson;
+    font-weight: 
 }
 
 .website-third{
-    width: 70px;
+    width: 65px;
     height: 160px;
     position: absolute;
     background-color:cadetblue;
     margin-top: 45px;
-    margin-left: 495px;
+    margin-left: 500px;
     margin-right: 25px;
 }
 
 .website-fourth{
     width: 90%;
     height: 75px;
-    background-color: orchid;
+    #background-color: orchid;
     margin-top: 210px;
     margin-left: 25px;
     margin-right: 25px;
@@ -144,18 +217,18 @@ body{
     border-right: 25px solid transparent;
     height: 0;
     width: 200px;
-    margin-top: -300px;
+    margin-top: 380px;
     margin-left: 500px;
-    position: relative;
+    position: absolute;
 
 }
 .desktop-base{
     background-color: grey;
-    width: 250px;
-    margin-top: 0px;
+    width: 200px;
+    margin-top: 480px;
     margin-left: 500px;
     height: 10px;
-    position: relative;
+    position: absolute;
 
 }
 
@@ -163,10 +236,10 @@ body{
     background-color: rosybrown;
     width: 95%;
     height: 15px;
-    margin-top: 0;
+    margin-top: 490px;
     margin-left: 25px;
     margin-right: 50px;
-    position: relative;
+    position: absolute;
 
 }
 
@@ -271,12 +344,13 @@ body{
     border-bottom: 100px solid silver;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    height: 40px;
-    width: 75px;
+    height: 125px;
+    width: 124px;
     transform: rotate(330deg);
-    left: 129px;
-    top: 44px;
-    position: absolute;
+    left: 132px;
+    top: -67px;
+    position: relative;
+    opacity: 100%;
 }
 
 .light1{
@@ -284,10 +358,10 @@ body{
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     height: 125px;
-    width: 120px;
+    width: 165px;
     transform: rotate(330deg);
-    left: 129px;
-    top: 44px;
+    left: 154px;
+    top: 130px;
     position: relative;
     opacity: 0%;
 }
@@ -333,3 +407,120 @@ body{
     font-size: 50px;
     opacity: 75%;
 }
+
+.whole-mountain{
+    height: 500px;
+    width: 500px;
+    position: inherit;
+}
+
+.whole-moutain:hover{
+    
+}
+
+.sky{
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+    margin-top: 0px;
+    background: lightblue;
+    border-radius: 50%;
+    position: inherit; 
+}
+
+.sun{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background: #f2f285;
+    border-radius: 50%;
+    position: relative;
+}
+
+.moutain-one{
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 30px;
+    position: inherit;
+}
+
+.moutain-one-right{
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #777;
+    border-left: 20px solid transparent;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.moutain-one-left{
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #888;
+    border-right: 20px solid transparent;
+    left: 20px;
+    top: 0px;
+    position: absolute;
+}
+
+.moutain-two{
+    width: 100px;
+    height: 100px;
+    left: 35px;
+    top: 10px;
+    position: inherit;
+}
+.moutain-two-right{
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #777;
+    border-left: 40px solid transparent;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+.moutain-two-left{
+    width: 0px;
+    height: 0px;
+    border-bottom: 40px solid #888;
+    border-right: 40px solid transparent;
+    left: 40px;
+    top: 0px;
+    position: absolute;
+}
+
+.ground-layerone{
+    border-radius: 5px;
+    background: #73AD21;
+    padding: 2px;
+    width: 125px;
+    height: 10px;
+    position: absolute;
+    left: 0px;
+    top: 45px;
+}
+.ground-layertwo{
+    border-radius: 5px;
+    background: #73AD21;
+    padding: 2px;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: -10px;
+    top: 50px;
+}
+.ground-layerthree{
+    border-radius: 5px;
+    background: #73AD21;
+    padding: 2px;
+    width: 125px;
+    height: 10px;
+    position: absolute;
+    left: 15px;
+    top: 55px;
+}
+
+
